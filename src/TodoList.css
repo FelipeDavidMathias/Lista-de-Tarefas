@@ -75,7 +75,7 @@ button.add:active{
 
 }
 
-.item, .itemCompleto{
+.item{
     display: flex;
     justify-content: space-between;
     border: 1px solid #363b65;
@@ -83,15 +83,72 @@ button.add:active{
     cursor: pointer;
 }
 
-.item:hover, .itemCompleto:hover{
-    background-color: #363ff8;
+.item:hover{
+    background-color: #3a3d74;
 }
 
-.item span, .itemCompleto span{
+.item span{
     width: 100%;
     color: white;
     margin-right: 10px;
     padding: 10px 15px;
+}
+
+.item.completo{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #363b65;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #12131f;
+
+}
+
+.item.completo span{
+    width: 100%;
+    color: rgb(117, 144, 180);
+    margin-right: 10px;
+    padding: 10px 15px;
+    text-decoration: line-through;
+
+}
+
+.item.completo:hover{
+    background-color: #363b65;
+}
+
+button.del{
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+
+}
+
+button.del:hover{
+    background-color: red;
+    transition: 0.7;
+}   
+
+button.delAll{
+    border: 1px solid red;
+    background: none;
+    padding: 15px;
+    color: #ff004c;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+
+button.delAll:hover{
+    background-color: #bb0000;
+    color: white;
+}
+
+.icon{
+    max-width: 100%;
+    margin-bottom: 10px;
 }
 
 
